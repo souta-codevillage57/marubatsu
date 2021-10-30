@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="game-container">
+            <div class="message-container">
+                <div class="message-list">
+                    <li class="js-hidden" id="maru-turn"><span class="maru">○</span>の番</li>
+                    <li id="batsu-turn"><span class="batsu">×</span>の番</li>
+                    <li class="js-hidden" id="maru-win"><span class="maru">○</span>の勝ち</li>
+                    <li class="js-hidden" id="batsu-win"><span class="batsu">×</span>の勝ち</li>
+                    <li class="js-hidden" id="draw">引き分け</li>
+                </div>
+            </div>
+            <div class="square-container">
+                <div class="square-box">
+                    <div id="1-1" class="square"></div>
+                    <div id="1-2" class="square"></div>
+                    <div id="1-3" class="square"></div>
+                    <div id="2-1" class="square"></div>
+                    <div id="2-2" class="square"></div>
+                    <div id="2-3" class="square"></div>
+                    <div id="3-1" class="square"></div>
+                    <div id="3-2" class="square"></div>
+                    <div id="3-3" class="square"></div>
+                </div>
+            </div>
+            <div class="btn-container">
+                <div class="js-hidden" id="reset-btn">
+                    <span class="btn-reset">もう一度遊ぶ</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

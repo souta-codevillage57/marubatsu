@@ -1,0 +1,110 @@
+html{
+    font-size: 16px;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body{
+    margin: 0;
+    line-height: normal;
+}
+li{
+    list-style: none;
+}
+.wrapper{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 0 10px;
+}
+.game-container{
+    padding: 60px 0;
+}
+.message-container{
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.maru {
+    color: #ff0000;
+}
+.batsu{
+    color: #00b0f0;
+}
+.square-container{
+    margin: 0 auto;
+    width: 202px;
+}
+.square-box{
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 2px black;
+    height: 202px;
+    width: 202px;
+}
+.square{
+    border: solid 2px black;
+    position: relative;
+    width: calc(198px/3);
+    height: calc(198px/3);
+}
+.js-maru-checked::before{
+    content: '';
+    width: 50px;
+    height: 50px;
+    border: solid 8px #ff0000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    border-radius: 50%;
+}
+.js-batsu-checked::before{
+content: '';
+width: 50px;
+height: 8px;
+background-color: #00b0f0;
+border-radius: 4px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50% ,-50%) rotate(45deg);
+}
+.js-batsu-checked::after{
+content: '';
+width: 8px;
+height: 50px;
+background-color: #00b0f0;
+border-radius: 4px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%)rotate(45deg);
+}
+.btn-container{
+    padding-top: 20px;
+}
+.btn-reset{
+    width: 150px;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #ffc000;
+    font-weight: bold;
+}
+.btn-reset:hover{
+    background-color: #ffd347;
+  transition-duration: 0.4s;
+}
+.js-hidden{
+    display: none;
+}
+.js-unclickable{
+    pointer-events: none;
+}
+.js-highLight {
+  background-color: #fff2cc;
+}
